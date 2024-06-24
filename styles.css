@@ -1,0 +1,121 @@
+ /* #check ul{
+    height: 60vh;
+    border: 2px solid yellow;
+    list-style: none;
+    display: flex;
+    /* flex, grid, media ___ are used to show website beautifully in laptop and phone or any screen size */
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* imp */
+    /* justify-content: end; */
+    /* saara content right me aa jayega if flex-direcion  row hai */
+    /* justify-content: space-around;  */
+    /* saare strips bikhar diye */
+    /* align-items: baseline; */
+    /* align-items: end; */
+    /* justify-content: center; */
+    /* PAGE KE MID ME LAANE KE LIYE  */
+    /* align-items: center; 
+} */
+
+*{
+    box-sizing: border-box;
+}
+
+#image {
+    display: block;
+}
+
+#row ::after{
+    position: relative;
+    width: fit-content;
+    max-width: 300px;
+}
+
+#check ul{
+    align-items: baseline;
+    /* baseline means jo starting point hai here top */
+    color: rgb(197, 12, 12);
+    /* background-color: rgba(2, 2, 2, 0.848); */
+    background-color: rgba(0, 77, 90, 0.888);
+    text-align: center;
+    padding: 30px;
+    height: auto;
+    list-style: none;    
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#check ol{
+    align-items: baseline;
+    color: rgb(240, 203, 203);
+    /* background-color: rgb(0, 0, 0, 0.848); */
+    background-color: rgba(100, 46, 100, 0.851);
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    height: auto;
+    list-style: none;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#check a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+#row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#column{
+    float: left;
+    width: 33%;
+    padding: 10px;
+    margin-left: 3px;
+    text-align: center;
+    font-family: Arial;
+    /* position: absolute; */
+    /* bottom: 0; */
+}
+
+#column #overlay{
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 400px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+#column p{
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 400px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 0%;
+    text-align: center;
+}
+
+#column:hover #overlay {
+    opacity: 1;
+}
+
+#column:hover p {
+    opacity: 1;
+}
